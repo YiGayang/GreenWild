@@ -1,0 +1,866 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column; }
+
+#toast {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 10%;
+  width: 80%;
+  top: 70%;
+  height: 0.3rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0.1rem;
+  display: none;
+  font-size: 0.14rem; }
+  #toast #tip {
+    color: #fff;
+    line-height: 0.3rem;
+    text-align: center; }
+
+#header #homeHeader {
+  display: flex;
+  height: 0.52rem;
+  padding: 0 0.12rem;
+  align-items: center; }
+  #header #homeHeader li:nth-child(1) {
+    width: 0.65rem; }
+    #header #homeHeader li:nth-child(1) img {
+      width: 0.47rem; }
+  #header #homeHeader li:nth-child(2) {
+    width: 0.50rem;
+    color: #3dac2c; }
+  #header #homeHeader li:nth-child(3) {
+    flex: 1; }
+    #header #homeHeader li:nth-child(3) .search {
+      display: flex;
+      align-items: center;
+      background: #f3f3f3;
+      height: 0.31rem;
+      border-radius: 0.2rem; }
+      #header #homeHeader li:nth-child(3) .search input {
+        width: 1.4rem;
+        border: none;
+        background: transparent;
+        padding-left: 0.14rem;
+        outline: none;
+        font-size: 0.03rem; }
+        #header #homeHeader li:nth-child(3) .search input::-webkit-input-placeholder {
+          color: #b6b6b6; }
+      #header #homeHeader li:nth-child(3) .search i {
+        color: #b6b6b6; }
+#header #makeHeader {
+  width: 100%;
+  display: flex;
+  height: 0.52rem; }
+#header #userHeader {
+  width: 100%;
+  display: flex;
+  height: 0.52rem; }
+
+#content {
+  flex: 1;
+  overflow-y: scroll; }
+  #content #homeContent {
+    background: #f2f2f8; }
+    #content #homeContent #homerBanner {
+      width: 3.2rem; }
+      #content #homeContent #homerBanner #bannerWrapper .swiper-slide {
+        width: 100%;
+        height: 2.64rem; }
+        #content #homeContent #homerBanner #bannerWrapper .swiper-slide img {
+          width: 100%;
+          height: 100%; }
+    #content #homeContent .home-menu {
+      background: #FFFFFF;
+      padding: 0 0.12rem 0.24rem 0.12rem;
+      border-bottom: 0.01rem solid #eee; }
+      #content #homeContent .home-menu .home-menu-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        #content #homeContent .home-menu .home-menu-list li {
+          padding-top: 0.24rem;
+          max-width: 0.74rem !important;
+          width: 0.74rem !important; }
+          #content #homeContent .home-menu .home-menu-list li div {
+            width: 0.32rem;
+            height: 0.33rem;
+            margin: 0 0.1rem;
+            border-radius: 20%;
+            padding: 0.11rem;
+            background: #F2F2F8; }
+            #content #homeContent .home-menu .home-menu-list li div img {
+              width: 0.32rem;
+              height: 0.33rem; }
+          #content #homeContent .home-menu .home-menu-list li p {
+            width: 100%;
+            height: 0.12rem;
+            padding-top: 0.12rem;
+            font-size: 0.03rem;
+            text-align: center; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(1) p {
+            color: #ffbe00; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(2) p {
+            color: #ddc2ff; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(3) p {
+            color: #ff98e7; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(4) p {
+            color: #c5e5c8; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(5) p {
+            color: #a9e5ff; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(6) p {
+            color: #ff7d90; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(7) p {
+            color: #a9e5ff; }
+          #content #homeContent .home-menu .home-menu-list li:nth-child(8) p {
+            color: #88e4ff; }
+    #content #homeContent .box {
+      width: 100%;
+      margin: 0.1rem 0; }
+      #content #homeContent .box .head {
+        height: 0.6rem;
+        background: #fff url(../img/b3.png) no-repeat -0.3rem 0.3rem;
+        line-height: 0.6rem;
+        text-align: center; }
+      #content #homeContent .box .home-gnhd {
+        background: #FFFFFF;
+        padding: 0 0.12rem; }
+        #content #homeContent .box .home-gnhd li {
+          width: 100%;
+          margin: 0.18rem 0 0.06rem 0; }
+          #content #homeContent .box .home-gnhd li .img-box {
+            width: 100%;
+            position: relative; }
+            #content #homeContent .box .home-gnhd li .img-box img {
+              width: 100%; }
+            #content #homeContent .box .home-gnhd li .img-box .abPrice {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0.8rem;
+              height: 0.45rem;
+              padding: 0 0.12rem;
+              line-height: 0.45rem;
+              text-align: center;
+              background: rgba(0, 0, 0, 0.7);
+              color: #FFFFFF;
+              font-size: 0.12rem; }
+              #content #homeContent .box .home-gnhd li .img-box .abPrice span {
+                font-size: 0.16rem;
+                font-weight: 600; }
+          #content #homeContent .box .home-gnhd li h3 {
+            font-size: 0.14rem;
+            font-weight: 600;
+            margin-top: 0.12rem;
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal !important;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical; }
+          #content #homeContent .box .home-gnhd li p {
+            display: flex;
+            margin-top: 0.096rem;
+            font-size: 0.12rem;
+            color: #999; }
+            #content #homeContent .box .home-gnhd li p span:nth-child(1) {
+              display: block;
+              background: red;
+              color: #FFFFFF;
+              padding: 0 0.06rem;
+              margin-right: 0.12rem; }
+            #content #homeContent .box .home-gnhd li p span:nth-child(2) {
+              flex: 1; }
+      #content #homeContent .box #proList {
+        width: 100%; }
+        #content #homeContent .box #proList li {
+          position: relative;
+          width: 100%;
+          height: 1rem;
+          background: #fff;
+          display: flex; }
+          #content #homeContent .box #proList li:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #000;
+            transform-origin: 0 0;
+            transform: scaleY(0.5); }
+          #content #homeContent .box #proList li .proImg {
+            width: 0.9rem;
+            height: 0.9rem;
+            margin: 0.05rem; }
+            #content #homeContent .box #proList li .proImg img {
+              width: 100%;
+              height: 100%; }
+          #content #homeContent .box #proList li .proInfo {
+            flex: 1;
+            margin-top: 0.07rem;
+            position: relative;
+            margin-right: 0.1rem; }
+            #content #homeContent .box #proList li .proInfo p {
+              width: 100%; }
+              #content #homeContent .box #proList li .proInfo p:nth-child(1) {
+                font-size: 0.14rem;
+                line-height: 0.17rem;
+                display: -webkit-box;
+                overflow: hidden;
+                white-space: normal !important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical; }
+              #content #homeContent .box #proList li .proInfo p:nth-child(2) {
+                margin-top: 0.06rem; }
+                #content #homeContent .box #proList li .proInfo p:nth-child(2) span {
+                  color: #3dac2c;
+                  font-size: 0.18rem; }
+                #content #homeContent .box #proList li .proInfo p:nth-child(2) del {
+                  color: #999;
+                  margin-left: 0.05rem; }
+              #content #homeContent .box #proList li .proInfo p:nth-child(3) {
+                margin-top: 0.04rem;
+                color: #333; }
+            #content #homeContent .box #proList li .proInfo .cartBtn {
+              position: absolute;
+              bottom: 0.1rem;
+              right: 0.1rem;
+              width: 0.6rem;
+              height: 0.3rem;
+              background: -webkit-linear-gradient(top, #92ff81, #3dac2c);
+              border-radius: 0.05rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              color: #fff; }
+              #content #homeContent .box #proList li .proInfo .cartBtn i.iconfont {
+                font-size: 0.25rem; }
+    #content #homeContent .idx_lxfs {
+      padding: 0.11rem 0.12rem 0.12rem 0.11rem;
+      background: #FFFFFF;
+      display: flex; }
+      #content #homeContent .idx_lxfs li:nth-child(1) {
+        flex: 1; }
+        #content #homeContent .idx_lxfs li:nth-child(1) img {
+          width: 100%;
+          height: 100%; }
+      #content #homeContent .idx_lxfs li:nth-child(2) {
+        flex: 1; }
+        #content #homeContent .idx_lxfs li:nth-child(2) img {
+          width: 100%;
+          height: 50%; }
+    #content #homeContent .copyRight {
+      height: 0.54rem;
+      border-top: 0.01rem solid #dcdcdc;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.12rem;
+      color: #999; }
+
+#footer #foot {
+  display: flex;
+  height: 0.6rem;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 0.01rem solid #999; }
+  #footer #foot li {
+    display: flex;
+    align-items: center; }
+    #footer #foot li.active {
+      color: #3dac2c; }
+    #footer #foot li .icon {
+      font-size: 0.25rem; }
+    #footer #foot li p {
+      font-size: 0.12rem;
+      margin-left: 0.08rem; }
+
+#userHeader, #loginHeader, #registerHeader {
+  width: 100%;
+  display: flex;
+  height: 0.52rem;
+  background: #f8f8f8;
+  font-family: "Yahei Mono"; }
+  #userHeader li, #loginHeader li, #registerHeader li {
+    text-align: center;
+    line-height: 0.52rem; }
+    #userHeader li:nth-child(1), #userHeader li:nth-child(3), #loginHeader li:nth-child(1), #loginHeader li:nth-child(3), #registerHeader li:nth-child(1), #registerHeader li:nth-child(3) {
+      width: 0.66rem;
+      color: #3dac2c;
+      line-height: 0.52rem; }
+      #userHeader li:nth-child(1) i.iconfont, #userHeader li:nth-child(3) i.iconfont, #loginHeader li:nth-child(1) i.iconfont, #loginHeader li:nth-child(3) i.iconfont, #registerHeader li:nth-child(1) i.iconfont, #registerHeader li:nth-child(3) i.iconfont {
+        font-size: 0.20rem; }
+    #userHeader li:nth-child(2), #loginHeader li:nth-child(2), #registerHeader li:nth-child(2) {
+      flex: 1; }
+
+section {
+  display: flex; }
+  section #userContent, section #loginContent, section #registerContent {
+    font-family: "Yahei Mono";
+    background: #f8f8f8;
+    flex: 1; }
+    section #userContent .form, section #loginContent .form, section #registerContent .form {
+      border-top: 0.01rem #999999 solid;
+      border-bottom: 0.01rem #999999 solid; }
+      section #userContent .form p, section #loginContent .form p, section #registerContent .form p {
+        display: flex;
+        background-color: #fff;
+        padding-top: 0.05rem; }
+        section #userContent .form p i.iconfont, section #loginContent .form p i.iconfont, section #registerContent .form p i.iconfont {
+          padding: 0.1rem;
+          font-size: 0.20rem;
+          color: #aaa; }
+        section #userContent .form p input, section #loginContent .form p input, section #registerContent .form p input {
+          flex: 1;
+          border: none;
+          outline: none;
+          border-bottom: 0.01rem #999999 solid; }
+          section #userContent .form p input[name="code"], section #userContent .form p input[name="password1"], section #loginContent .form p input[name="code"], section #loginContent .form p input[name="password1"], section #registerContent .form p input[name="code"], section #registerContent .form p input[name="password1"] {
+            border-bottom: none; }
+        section #userContent .form p .code, section #loginContent .form p .code, section #registerContent .form p .code {
+          display: inline-block;
+          padding-right: 0.1rem;
+          height: 0.36rem;
+          background: #3dac2c;
+          width: 0.66rem;
+          line-height: 0.33rem;
+          text-align: center;
+          color: #f8f8f8; }
+    section #userContent #login, section #userContent #register, section #loginContent #login, section #loginContent #register, section #registerContent #login, section #registerContent #register {
+      font-family: "Yahei Mono";
+      width: 90%;
+      background: #3dac2c;
+      display: inline-block;
+      margin: 0.2rem 0 0 5%;
+      padding: 0.1rem 0;
+      border: none;
+      border-radius: 0.05rem;
+      color: #fff; }
+    section #userContent p.btn, section #loginContent p.btn, section #registerContent p.btn {
+      margin: 0.1rem 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      section #userContent p.btn span, section #loginContent p.btn span, section #registerContent p.btn span {
+        line-height: 0.24rem;
+        height: 0.24rem;
+        font-size: 0.14rem;
+        color: #999999; }
+    section #userContent .userInfo, section #loginContent .userInfo, section #registerContent .userInfo {
+      display: flex;
+      flex-direction: column; }
+      section #userContent .userInfo .userImg, section #loginContent .userInfo .userImg, section #registerContent .userInfo .userImg {
+        height: 1rem;
+        background: url(../img/userImg.jpg); }
+      section #userContent .userInfo .userPhoto, section #loginContent .userInfo .userPhoto, section #registerContent .userInfo .userPhoto {
+        height: 0.2rem;
+        width: 0.2rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0.1rem;
+        border-radius: 50%;
+        background: #333;
+        box-shadow: 0 0 0 0.06rem #fff;
+        position: relative;
+        top: -0.1rem; }
+        section #userContent .userInfo .userPhoto i.iconfont, section #loginContent .userInfo .userPhoto i.iconfont, section #registerContent .userInfo .userPhoto i.iconfont {
+          color: #fff; }
+      section #userContent .userInfo p, section #loginContent .userInfo p, section #registerContent .userInfo p {
+        text-align: center; }
+    section #userContent .infoList, section #loginContent .infoList, section #registerContent .infoList {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      section #userContent .infoList li, section #loginContent .infoList li, section #registerContent .infoList li {
+        margin: 0.1rem 0;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        background: #ffffff;
+        text-indent: 1em;
+        border-top: 1px #aaaaaa solid;
+        border-bottom: 1px #aaaaaa solid;
+        display: flex;
+        justify-content: space-between; }
+        section #userContent .infoList li i.iconfont, section #loginContent .infoList li i.iconfont, section #registerContent .infoList li i.iconfont {
+          margin-right: 0.1rem; }
+        section #userContent .infoList li:nth-child(4), section #loginContent .infoList li:nth-child(4), section #registerContent .infoList li:nth-child(4) {
+          margin: 0.1rem auto;
+          width: 95%;
+          border: none; }
+          section #userContent .infoList li:nth-child(4) #signOut, section #loginContent .infoList li:nth-child(4) #signOut, section #registerContent .infoList li:nth-child(4) #signOut {
+            border-radius: 0.05rem;
+            font-size: 0.20rem;
+            color: #fff;
+            width: 100%;
+            border: none;
+            background: #3dac2c; }
+
+#orderHeader {
+  width: 100%;
+  display: flex;
+  height: 0.52rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8; }
+  #orderHeader li:nth-child(1) {
+    font-size: 0.25rem;
+    margin-left: 0.2rem;
+    color: #3dac2c; }
+  #orderHeader li:nth-child(2) {
+    font-size: 0.16rem;
+    color: #333; }
+  #orderHeader li:nth-child(3) {
+    font-size: 0.25rem;
+    margin-right: 0.2rem;
+    color: #3dac2c; }
+
+#orderContent {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column; }
+  #orderContent .flowPath {
+    height: 0.45rem;
+    width: 98%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.02rem solid #999;
+    border-top: 0.02rem solid #999;
+    box-sizing: border-box; }
+    #orderContent .flowPath .order_active {
+      background: #3dac2c;
+      color: #fff; }
+    #orderContent .flowPath li {
+      flex: 1;
+      text-align: center;
+      line-height: 0.45rem;
+      border-right: 0.01rem solid #999; }
+  #orderContent #orderMain {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    #orderContent #orderMain #orderList {
+      width: 100%; }
+      #orderContent #orderMain #orderList .orderItem {
+        width: 96%;
+        margin-left: 2%;
+        height: 1.2rem;
+        position: relative;
+        border: 0.02rem solid #999;
+        box-sizing: border-box;
+        background: #fff;
+        margin-top: 0.1rem;
+        border-radius: 0.03rem; }
+        #orderContent #orderMain #orderList .orderItem .deleteItem {
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: #eee;
+          width: 0.5rem;
+          line-height: 1.2rem;
+          font-size: 0.16rem;
+          color: #3dac2c;
+          text-align: center; }
+        #orderContent #orderMain #orderList .orderItem .itemBox {
+          display: flex;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: #fff; }
+          #orderContent #orderMain #orderList .orderItem .itemBox .itemImg {
+            width: 0.9rem;
+            height: 0.9rem;
+            margin: 0.1rem; }
+            #orderContent #orderMain #orderList .orderItem .itemBox .itemImg img {
+              width: 100%;
+              height: 100%; }
+          #orderContent #orderMain #orderList .orderItem .itemBox .itemInfo {
+            flex: 1;
+            margin-top: 0.14rem;
+            position: relative;
+            margin-right: 0.2rem; }
+          #orderContent #orderMain #orderList .orderItem .itemBox p {
+            width: 100%;
+            font-size: 0.12rem;
+            line-height: 0.2rem;
+            margin-top: 0.01rem; }
+            #orderContent #orderMain #orderList .orderItem .itemBox p:nth-child(1) {
+              display: -webkit-box;
+              overflow: hidden;
+              white-space: normal !important;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical; }
+            #orderContent #orderMain #orderList .orderItem .itemBox p:nth-child(2) {
+              margin-left: 0.05rem; }
+            #orderContent #orderMain #orderList .orderItem .itemBox p:nth-child(3) {
+              margin-left: 0.05rem;
+              color: #333; }
+              #orderContent #orderMain #orderList .orderItem .itemBox p:nth-child(3) span {
+                color: #f66; }
+    #orderContent #orderMain #orderEditList {
+      width: 100%; }
+      #orderContent #orderMain #orderEditList .cartItem {
+        width: 96%;
+        margin-left: 2%;
+        height: 1.2rem;
+        border: 0.02rem solid #999;
+        box-sizing: border-box;
+        background: #fff;
+        margin-top: 0.1rem;
+        border-radius: 0.03rem;
+        display: flex; }
+      #orderContent #orderMain #orderEditList .itemImg {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin: 0.05rem; }
+        #orderContent #orderMain #orderEditList .itemImg img {
+          width: 100%;
+          height: 100%; }
+      #orderContent #orderMain #orderEditList .itemInfo {
+        flex: 1;
+        height: 1.2rem;
+        margin-top: 0.05rem;
+        margin-right: 0rem;
+        display: flex;
+        flex-direction: column; }
+        #orderContent #orderMain #orderEditList .itemInfo P {
+          width: 100%;
+          height: 0.2rem;
+          font-size: 0.12rem;
+          line-height: 0.2rem;
+          margin-top: 0.01rem;
+          margin-left: 0.1rem; }
+          #orderContent #orderMain #orderEditList .itemInfo P:nth-child(1) {
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal !important;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical; }
+          #orderContent #orderMain #orderEditList .itemInfo P:nth-child(2) {
+            font-size: 0.12rem;
+            margin-top: 0.1rem;
+            margin-left: 0.2rem; }
+            #orderContent #orderMain #orderEditList .itemInfo P:nth-child(2) span {
+              color: #f66;
+              font-size: 0.16rem;
+              font-weight: bold; }
+          #orderContent #orderMain #orderEditList .itemInfo P:nth-child(3) {
+            width: 80%;
+            margin-top: 0.1rem;
+            color: #333;
+            display: flex; }
+            #orderContent #orderMain #orderEditList .itemInfo P:nth-child(3) span {
+              flex: 1;
+              height: 0.3rem;
+              font-size: 0.14rem;
+              text-align: center;
+              line-height: 0.3rem;
+              display: block;
+              border: 1px solid #ccc; }
+              #orderContent #orderMain #orderEditList .itemInfo P:nth-child(3) span:nth-child(2) {
+                border-left: 0;
+                border-right: 0;
+                font-size: 0.14rem; }
+
+#makeHeader, #makeDingdanHeader {
+  width: 100%;
+  display: flex;
+  height: 0.52rem;
+  background: #f8f8f8; }
+  #makeHeader li, #makeDingdanHeader li {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #makeHeader li:nth-child(1), #makeHeader li:nth-child(3), #makeDingdanHeader li:nth-child(1), #makeDingdanHeader li:nth-child(3) {
+      width: 0.52rem;
+      height: 0.52rem;
+      color: #63986e; }
+      #makeHeader li:nth-child(1) i, #makeHeader li:nth-child(3) i, #makeDingdanHeader li:nth-child(1) i, #makeDingdanHeader li:nth-child(3) i {
+        font-size: 0.28rem; }
+    #makeHeader li:nth-child(2), #makeDingdanHeader li:nth-child(2) {
+      flex: 1;
+      font-size: 0.22rem; }
+
+#makeContent {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; }
+  #makeContent .make_call {
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    right: 0.05rem; }
+    #makeContent .make_call .make_callLeft {
+      width: 1.08rem;
+      height: 0.5rem;
+      border-radius: 0.06rem;
+      background: #3dac2c;
+      margin-right: 0.08rem; }
+      #makeContent .make_call .make_callLeft p {
+        text-align: center;
+        line-height: 0.25rem; }
+    #makeContent .make_call .make_callRight {
+      width: 0.5rem;
+      height: 0.5rem;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 0.06rem;
+      text-align: center;
+      line-height: 0.5rem; }
+      #makeContent .make_call .make_callRight i {
+        font-size: 0.3rem;
+        color: #3dac2c; }
+  #makeContent .make_banner {
+    height: 1.6rem;
+    width: 100%; }
+    #makeContent .make_banner img {
+      width: 100%;
+      height: 100%; }
+  #makeContent .make_text {
+    display: flex;
+    padding: 0.16rem 0;
+    width: 100%;
+    height: 1.52rem;
+    background: #f8f8f8; }
+    #makeContent .make_text .text_left {
+      margin: 0 0.16rem;
+      height: 100%; }
+      #makeContent .make_text .text_left img {
+        width: 0.2rem;
+        height: 100%; }
+    #makeContent .make_text .text_right {
+      margin-right: 0.16rem; }
+      #makeContent .make_text .text_right p {
+        font-size: 0.14rem;
+        color: #333;
+        line-height: 0.18rem; }
+  #makeContent .make_time {
+    height: 1.4rem;
+    position: relative; }
+    #makeContent .make_time img {
+      width: 100%;
+      height: 100%; }
+    #makeContent .make_time p {
+      width: 2.56rem;
+      height: 0.5rem;
+      position: absolute;
+      left: 0.3rem;
+      top: 0.46rem;
+      background: rgba(0, 0, 0, 0.8);
+      color: #FFFFFF;
+      font-size: 0.24rem;
+      line-height: 0.5rem;
+      text-align: center; }
+  #makeContent .make_nav p {
+    width: 100%;
+    position: relative;
+    text-align: center; }
+    #makeContent .make_nav p:before {
+      width: 100%;
+      height: 0.02rem;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -0.01rem;
+      content: " ";
+      background-color: #49be8a; }
+    #makeContent .make_nav p span {
+      font-size: 0.22rem;
+      display: inline-block;
+      height: 0.5rem;
+      background: #FFFFFF;
+      padding: 0 0.2rem;
+      position: relative;
+      line-height: 0.5rem; }
+  #makeContent .make_nav .make_navList {
+    display: flex; }
+    #makeContent .make_nav .make_navList li {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      text-align: center; }
+      #makeContent .make_nav .make_navList li i {
+        display: inline-block;
+        margin: 0 auto;
+        width: 0.36rem;
+        height: 0.36rem; }
+        #makeContent .make_nav .make_navList li i img {
+          height: 100%;
+          width: 100%; }
+      #makeContent .make_nav .make_navList li span {
+        font-size: 0.14rem; }
+  #makeContent .make_list {
+    width: 100%; }
+    #makeContent .make_list p {
+      width: 100%;
+      position: relative;
+      text-align: center; }
+      #makeContent .make_list p:before {
+        width: 100%;
+        height: 0.02rem;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -0.01rem;
+        content: " ";
+        background-color: #49be8a; }
+      #makeContent .make_list p span {
+        font-size: 0.22rem;
+        display: inline-block;
+        height: 0.5rem;
+        background: #FFFFFF;
+        padding: 0 0.2rem;
+        position: relative;
+        line-height: 0.5rem; }
+    #makeContent .make_list img {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 0.03rem; }
+
+.make_call {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  right: 0.05rem; }
+  .make_call .make_callLeft {
+    width: 1.08rem;
+    height: 0.5rem;
+    border-radius: 0.06rem;
+    background: #3dac2c;
+    margin-right: 0.08rem; }
+    .make_call .make_callLeft p {
+      text-align: center;
+      line-height: 0.25rem; }
+  .make_call .make_callRight {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0.06rem;
+    text-align: center;
+    line-height: 0.5rem; }
+    .make_call .make_callRight i {
+      font-size: 0.3rem;
+      color: #3dac2c; }
+
+#makeDingdanContent {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; }
+  #makeDingdanContent .makeDingdan_banner {
+    height: 1.6rem;
+    width: 100%; }
+    #makeDingdanContent .makeDingdan_banner img {
+      width: 100%;
+      height: 100%; }
+  #makeDingdanContent .xingzou {
+    height: 0.66rem;
+    line-height: 0.66rem;
+    display: flex;
+    color: #37cf94; }
+    #makeDingdanContent .xingzou .xingzou-pic {
+      height: 0.3rem;
+      width: 0.3rem;
+      margin: 0.18rem; }
+  #makeDingdanContent .tubu {
+    font-size: 0.14rem; }
+    #makeDingdanContent .tubu li {
+      display: flex;
+      position: relative;
+      margin: 0 0.23rem;
+      line-height: 0.22rem;
+      margin-bottom: 0.16rem; }
+      #makeDingdanContent .tubu li i {
+        margin-right: 0.23rem;
+        color: #37cf94; }
+  #makeDingdanContent .tuijian {
+    margin: 0 0.23rem 0.44rem; }
+    #makeDingdanContent .tuijian a {
+      display: inline-block;
+      padding: 0.04rem;
+      background: #37cf94;
+      color: #FFFFFF;
+      margin: 0.05rem 0.05rem;
+      font-size: 0.14rem; }
+  #makeDingdanContent .makeDingdan_jieshao {
+    width: 100%; }
+    #makeDingdanContent .makeDingdan_jieshao img {
+      width: 100%; }
+  #makeDingdanContent .makeDingdan_xinxi {
+    width: 100%; }
+    #makeDingdanContent .makeDingdan_xinxi p {
+      text-indent: 0.15rem;
+      width: 100%;
+      height: 0.44rem;
+      background: #f6f6f6;
+      line-height: 0.44rem; }
+    #makeDingdanContent .makeDingdan_xinxi input {
+      width: 100%;
+      height: 0.48rem;
+      border: 0;
+      line-height: 0.48rem;
+      text-indent: 0.15rem;
+      border-bottom: 0.01rem solid #f6f6f6; }
+    #makeDingdanContent .makeDingdan_xinxi .input {
+      text-indent: 0.1rem; }
+    #makeDingdanContent .makeDingdan_xinxi button {
+      width: 94%;
+      height: 0.48rem;
+      margin: 0.1rem 3%;
+      background: #3dac2c;
+      border-radius: 0.06rem;
+      color: #FFFFFF; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 200026 */
+  src: url("//at.alicdn.com/t/font_0qq7g0z9ac5idx6r.eot");
+  src: url("//at.alicdn.com/t/font_0qq7g0z9ac5idx6r.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_0qq7g0z9ac5idx6r.woff") format("woff"), url("//at.alicdn.com/t/font_0qq7g0z9ac5idx6r.ttf") format("truetype"), url("//at.alicdn.com/t/font_0qq7g0z9ac5idx6r.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+@font-face {
+  font-family: 'iconfont';  !* project id 200184 *!
+  src: url('//at.alicdn.com/t/font_z1ckdq9jdpxh6w29.eot');
+  src: url('//at.alicdn.com/t/font_z1ckdq9jdpxh6w29.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_z1ckdq9jdpxh6w29.woff') format('woff'),
+  url('//at.alicdn.com/t/font_z1ckdq9jdpxh6w29.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_z1ckdq9jdpxh6w29.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}*/
+
+/*# sourceMappingURL=index.css.map */
